@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords"
+    content="event venues, banquet halls, party spaces, wedding venues, celebration spaces, book event venue, venue booking India, affordable venues, venue listings, corporate event spaces, engagement venues, birthday party halls, wedding halls, venue rental platform, top venues India">
+
+  <link rel="shortcut icon" href="assets/image/newMobile.png" type="image/x-icon">
+
+  <!-- Libs -->
+  <link rel="stylesheet" href="assets/libs/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/fonts/fontello/css/fontello.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.css" rel="stylesheet">
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script src="https://kit.fontawesome.com/7bd032c7ab.js" crossorigin="anonymous"></script>
+  <title>Celebration Spaces</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&display=swap');
+  </style>
+  <!-- SweetAlert CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+
+  <div class="mouse-follower">
+    <span class="cursor-outline"></span>
+    <span class="cursor-dot"></span>
+  </div>
+
+  <!-- navbar -->
+  <div class="navbar-transparent navbar-position">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg">
+            <!-- for device -->
+            <a class="navbar-brand Cinzel-f BigScreen" href="index.html">
+              <!-- Default logo (white version) -->
+              <img src="assets/image/new-one.png" alt="Logo White" class="logo-default" style="height: 80px;">
+
+              <!-- Scrolled logo (dark version) -->
+              <img src="assets/image/newone-black.png" alt="Logo Black" class="logo-scrolled"
+                style=" display: none; height: 80px;">
+            </a>
+            <!-- for mobile -->
+            <a class="navbar-brand Cinzel-f mobile" href="index.html">
+              <img src="assets/image/newMobile.png" alt="Logo Mobile" style="height:75px;">
+            </a>
+
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto ms-auto content__item">
+                <li class="nav-item dropdown ">
+                  <a class="nav-link  link link--metis" href="index.html" id="navbarHome">
+                    Home
+                  </a>
+
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link link link--metis" href="venues.html" id="navbarListing">
+                    Venues
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link link link--metis" href="vendors.html" id="navbarListing">
+                    Vendor
+                  </a>
+                </li>
+
+
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link link link--metis" href="gallery.html" aria-expanded="false">
+                    Gallery
+                  </a>
+
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link link link--metis" href="realWedding.html" aria-expanded="false">
+                    Real Wedding
+                  </a>
+
+                </li>
+                <li class="nav-item dropdown ">
+                  <a class="nav-link link link--metis" href="blog.html" id="blogDropdown" role="button">
+                    Blog
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link link link--metis" href="about.html" aria-expanded="false">
+                    About us
+                  </a>
+
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link link link--metis" href="contact.html" aria-expanded="false">
+                    Contact
+                  </a>
+
+                </li>
+              </ul>
+              <div class="p-3 p-lg-0 d-flex justify-content-center">
+                <a href="#" class="btn btn2 style1 rounded">Get Started Now</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- hero section -->
+  <section class=" pt-5 HeroSection position-relative overflow-hidden d-flex align-items-center justify-content-center">
+    <!-- Slider Wrapper -->
+    <div class="hero-slider  ">
+      <div class="slide   slide-1 active"></div>
+      <div class="slide slide-2"></div>
+      <div class="slide slide-3"></div>
+    </div>
+
+    <div class="container position-relative " style="z-index: 2;">
+      <div class="row justify-content-center">
+        <!-- hero captions -->
+        <div class="col-lg-8 col-md-6">
+          <div class="text-white">
+            <h1 class="text-white">Why List Your Venue on <span style="color:#f48c06">Celebration Spaces</span>?</h1>
+            <p class="lead parata-f">More Bookings. More Visibility. Less Hassle.</p>
+            <P>Presented by:</P>
+            <p class="lead parata-f">Celebration Spaces – Powered by AAJneeti Connect Ltd. (ACL)</p>
+            <p>India’s Modern Wedding & Event Planning Hub</p>
+            <p>We’re not just a listing site — we’re your booking partner.</p>
+            <ul>
+              <li>Attract verified, ready-to-book users</li>
+              <li>Get included in our digital ads on Google, Facebook & Instagram</li>
+              <li>Feature in our city pages and Google-optimised campaigns</li>
+            </ul>
+            <a data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn2 style1 rounded">Download
+              Brochure</a>
+          </div>
+
+        </div> <!-- end col -->
+        <!-- form 1-->
+        <div class="col-lg-4 col-md-6 d-flex justify-content-center align-items-start flex-column d-none d-sm-block">
+          <div class="appointment-content p-4 rounded-4" style="background:white">
+            <div class="content-title style1 Cinzel-f">
+              <h2 id="heading" class="text-center">Get in Touch</h2>
+            </div>
+            <form class="appointment-form" id="ajax-header-contact">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
+                    <input type="text" name="name1" placeholder="Your Name" class="rounded">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group wow animate__animated animate__fadeInUp" data-wow-delay=".4s">
+                    <input type="text" name="City" placeholder="Your City" class="rounded">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group wow animate__animated animate__fadeInUp" data-wow-delay=".6s">
+                    <input type="tel" name="phone" placeholder="Phone Number" class="rounded">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <button type="submit" class="btn2 style1 rounded">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div> <!-- end row -->
+    </div> <!-- end container -->
+  </section>
+
+  <!-- form 2 for mobile -->
+  <section class="d-block d-sm-none pt-4">
+    <div class="d-flex justify-content-center align-items-start flex-column ">
+      <div class="appointment-content p-4 rounded-4" style="background:white">
+        <div class="content-title style1 Cinzel-f">
+          <h2 id="heading" class="text-center">Get in Touch</h2>
+        </div>
+        <form class="appointment-form" id="ajax-header-contact-2">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
+                <input type="text" name="name1" placeholder="Your Name" class="rounded">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group wow animate__animated animate__fadeInUp" data-wow-delay=".4s">
+                <input type="text" name="City" placeholder="Your City" class="rounded">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group wow animate__animated animate__fadeInUp" data-wow-delay=".6s">
+                <input type="tel" name="phone" placeholder="Phone Number" class="rounded">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <button type="submit" class="btn2 style1 rounded w-100">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!--  -->
+  <section class="appointment-wrap style1 ptb-100">
+    <div class="container">
+      <div class="row align-items-center gx-5">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+          <h2 class="TextColor">The Big Problem: Are You Facing These Challenges?</h2>
+          <h4>If you're a banquet hall or wedding venue owner, chances are you’ve dealt with:</h4>
+
+          <ul>
+            <li>Low occupancy during off-season</li>
+            <li> Time wasted on fake or low-quality inquiries</li>
+            <li>Poor visibility despite premium location and service</li>
+            <li>No structured lead follow-up system</li>
+            <li> High marketing spends with minimal ROI</li>
+          </ul>
+          <p>You deserve a smarter, simpler, and results-driven approach.</p>
+          <h2 class="TextColor">What’s In It For You?</h2>
+          <h4>Why 100+ venue owners choose Celebration Spaces:</h4>
+
+          <ul>
+            <li>Attract verified, ready-to-book users</li>
+            <li>Show up in filtered searches (location, budget, capacity, features)</li>
+            <li>Direct inquiries via chat, call, or contact form</li>
+            <li>Feature in our city pages and Google-optimised campaigns</li>
+            <li>Get included in our digital ads on Google, Facebook & Instagram</li>
+          </ul>
+        </div>
+        <div class="col-lg-6 shine-effect" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+          <img src="assets/image/newhall2.png" alt="" class="img-fluid rounded">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="appointment-wrap style1 ptb-100">
+    <div class="container">
+      <div class="row align-items-center gx-5">
+        <div class="col-lg-6 shine-effect" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+          <img src="assets/image/hall4.png" alt="" class="img-fluid rounded">
+        </div>
+        <div class="col-lg-6 d-flex justify-content-center align-content-center" data-aos="fade-right"
+          data-aos-duration="1200" data-aos-delay="200">
+          <div class="secondCard">
+            <div class="item-1 py-2">
+              <h1 class="TextColor">We Go Beyond Listings</h1>
+              <h4>Celebration Spaces is an entire ecosystem designed to get you booked:</h4>
+              <ul>
+                <li>Real Wedding Inspiration & Moodboards</li>
+                <li>Verified Vendor Listings to match your venue</li>
+                <li>Planning Guides, Budget Calculators & Blogs</li>
+                <li>Genie Recommendation Engine for perfect match-making</li>
+                <li>Celebration Privilege loyalty program for bonus visibility</li>
+              </ul>
+            </div>
+            <div class="item-2 py-2">
+              <h1 class="TextColor">Powered by Performance</h1>
+              <h4>We bring tech + marketing muscle to your venue:</h4>
+              <ul>
+                <li>Real Wedding Inspiration & Moodboards</li>
+                <li>Verified Vendor Listings to match your venue</li>
+                <li>Planning Guides, Budget Calculators & Blogs</li>
+                <li>Genie Recommendation Engine for perfect match-making</li>
+                <li>Celebration Privilege loyalty program for bonus visibility</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="ptb-100" style="background: url('assets/image/banner.png') center center / cover no-repeat;">
+    <div class="container">
+      <div class="info text-center py-2">
+        <h1>How It Works for You</h1>
+        <p>Your journey to more bookings:</p>
+      </div>
+      <div class="row g-5 justify-content-center text-center">
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="service-card style4">
+            <span class="service-icon2">
+              <img src="assets/image/wedding-bells.png" alt="" style="height: 60px; width: 60px;">
+            </span>
+            <h3><a href="#">Get listed with a rich venue profile</a></h3>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="service-card style4">
+            <span class="service-icon2">
+              <img src="assets/image/search.png" alt="" style="height: 60px; width: 60px;">
+            </span>
+            <h3><a href="">Users search using filters (location, budget, etc.)</a></h3>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="service-card style4">
+            <span class="service-icon2">
+              <img src="assets/image/wedding-card.png" alt="" style="height: 60px; width: 60px;">
+            </span>
+            <h3><a href="">Your venue appears in top results and city pages</a></h3>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="service-card style4">
+            <span class="service-icon">
+              <img src="assets/image/wedding-invitation.png" alt="" style="height: 60px; width: 60px;">
+            </span>
+            <h3><a href="">Direct leads contact you via chat, call, or quote request</a></h3>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="service-card style4">
+            <span class="service-icon">
+              <img src="assets/image/followers.png" alt="" style="height: 60px; width: 60px;">
+            </span>
+            <h3><a href="">Our system nurtures leads with automated follow-ups</a></h3>
+          </div>
+        </div>
+      </div>
+      <p class="text-center pt-2">Available in top cities: Agra, Noida, Delhi NCR, Jaipur, Lucknow, Goa, and more!</p>
+    </div>
+  </section>
+
+  <!-- gallery -->
+  <section style="padding-top: 50px!important;">
+    <div class="container">
+      <div class="row mb-6">
+        <!-- caption -->
+        <div class="col-md-12 col-12 text-center">
+          <h2 class="mb-0 fs-1 Cinzel-f wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">Gallery
+          </h2>
+        </div>
+
+      </div>
+      <div class="swiper vlogMySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class=" position-relative">
+              <div class=" img-hover  mb-4 image-container">
+                <!-- img -->
+                <a href="detail_page.html"><img
+                    src="assets/image/banner6.png"
+                    alt="" class="img-fluid "></a>
+                <div class="overlay"></div>
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class=" position-relative">
+              <div class=" img-hover  mb-4 image-container">
+                <!-- img -->
+                <a href="detail_page.html"><img
+                    src="assets/image/banner8.png" alt=""
+                    class="img-fluid"></a>
+                <div class="overlay"></div>
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="position-relative ">
+              <div class=" img-hover  mb-4 image-container">
+                <!-- img -->
+                <a href="detail_page.html"><img
+                    src="assets/image/banner15.png" alt=""
+                    class="img-fluid"></a>
+                <div class="overlay"></div>
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class=" position-relative">
+              <div class=" img-hover  mb-4 image-container">
+                <!-- img -->
+                <a href="detail_page.html"><img
+                    src="assets/image/blog5.png" alt=""
+                    class="img-fluid"></a>
+                <div class="overlay"></div>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="position-relative ">
+              <div class=" img-hover  mb-4 image-container">
+                <!-- img -->
+                <a href="detail_page.html"><img
+                    src="assets/image/Editors6.png"
+                    alt="" class="img-fluid"></a>
+                <div class="overlay"></div>
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="position-relative ">
+              <div class=" img-hover  mb-4 image-container">
+                <!-- img -->
+                <a href="pages/blog-single.html"><img
+                    src="assets/image/hall4.png"
+                    alt="" class="img-fluid"></a>
+                <div class="overlay"></div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- gallery end -->
+
+
+  <!-- Pricing Section Start -->
+  <section class="pricing-wrap ptb-100">
+    <div class="container">
+      <div class="section-title style1 text-center mb-30">
+        <span>Packages for Every Business Need</span>
+        <h4 class="pt-2">Celebration Spaces has tailored packages to fit every stage of your business growth</h4>
+      </div>
+      <div class="row justify-content-center pb-75  text-center">
+        <div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+          <div class="pricing-card style1">
+            <div class="pricing-header pricing-bg-1 bg-f">
+              <h5>Low Bookings? Package</h5>
+              <h4> ₹3,00,000 + GST<span>/Yrs</span></h4>
+            </div>
+            <ul class="pricing-features list-unstyled">
+              <li class="checked fw-semibold">Leads per Month:<i class="ri-check-line"></i></li>
+              <p>250–300 high-intent leads</p>
+              <li class="checked fw-semibold">Best Suited For<i class="ri-check-line"></i></li>
+              <p>Halls with 30–40% occupancy </p>
+              <p> This package provides aggressive promotion, increased platform visibility, and more lead volume to
+                help turn things around quickly.</p>
+            </ul>
+            <a data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn2 style1 rounded">Book Now</a>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+          <div class="pricing-card style1">
+            <div class="pricing-header pricing-bg-2 bg-f">
+              <h5>Heavy Bookings? Package</h5>
+              <h4>₹6,00,000 + GST<span>/Yrs</span></h4>
+            </div>
+            <ul class="pricing-features list-unstyled">
+              <li class="checked fw-semibold">Leads per Month:<i class="ri-check-line"></i></li>
+              <p>480–600 targeted inquiries</p>
+              <li class="checked fw-semibold">Best Suited For:<i class="ri-check-line"></i></li>
+              <p>Large venues, premium properties</p>
+              <p>This premium package ensures priority placement, maximum visibility, and high-frequency inquiries to
+                support large-scale operations.</p>
+            </ul>
+            <a data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn2 style1 rounded">Book Now</a>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800">
+          <div class="pricing-card style1">
+            <div class="pricing-header pricing-bg-3 bg-f">
+              <h5>Moderate Boost Package</h5>
+              <h5>₹1,80,000 + GST<span>/Yrs</span></h5>
+            </div>
+            <ul class="pricing-features list-unstyled">
+              <li class="checked fw-semibold">Leads per Month:<i class="ri-check-line"></i></li>
+              <p> 120–150 qualified inquiries</p>
+              <li class="checked fw-semibold">Best Suited For<i class="ri-check-line"></i></li>
+              <p>Halls with 60–70% occupancy</p>
+              <p>Ideal for venues that already have decent visibility but want to scale up their online reach and
+                maintain consistent
+                bookings throughout the year.</p>
+            </ul>
+            <a data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn2 style1 rounded">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Pricing Section End -->
+
+
+  <!-- cta -->
+  <section class="py-10 py-lg-17 cta jarallax overlay-section position-relative">
+
+    <img class="jarallax-img " src="/assets/image/ring.png" alt="">
+    <!-- <div class="overlay"></div> -->
+    <div class="container">
+      <div class="row justify-content-center gx-4">
+        <!-- cta captions -->
+        <div class="col-md-6">
+          <div class="text-white text-start">
+            <h2 class=" fw-semi-bold text-white mb-4 Cinzel-f">Add-On Services (Available with All Packages)
+            </h2>
+            <p class="text-white mb-6 parata-f">Enhance your conversion rates and lead handling efficiency
+              with our smart tools:</p>
+            <ul>
+              <li>Lead Nurturing: Automated follow-ups and drip campaigns to warm up cold leads.</li>
+              <li>WhatsApp Retargeting: Stay top-of-mind with leads who didn’t book immediately.</li>
+              <li> CRM Access: Track, manage, and organize your inquiries from one simple dashboard.</li>
+              <li>Sales Assistance: Get help from our in-house experts to close hot leads faster.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+          <div class="text-white text-start">
+            <h2 class=" fw-semi-bold text-white mb-4 Cinzel-f">Real Support. Real Growth.</h2>
+            <p class="text-white mb-6 parata-f">We’re in it for the long haul.</p>
+            <ul>
+              <li>60% Qualified Lead Guarantee</li>
+              <li>24-Hour Lead Replacement Policy</li>
+              <li>Weekly Performance Reports</li>
+              <li>CRM Access for Smarter Conversions</li>
+              <li>City Page Exposure for Local Authority</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+  <!-- Appointment Section start -->
+  <section class="appointment-wrap style1 ptb-100">
+    <div class="container">
+      <div class="row align-items-center gx-5">
+        <div class="col-lg-6 " data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+          <div class="aboutCard position-relative">
+            <h1> Ready to List Your Venue?</h1>
+            <h3>Let’s Fill Your Calendar with Celebrations</h3>
+            <p>Join Celebration Spaces today and unlock:</p>
+            <ul>
+              <li>Year-round, verified leads from your city</li>
+              <li>Boosted online presence via Google & Meta Ads</li>
+              <li>Loyalty-based perks through our vendor ecosystem</li>
+              <li>A smarter way to grow with the power of AAJneeti Connect Ltd.</li>
+            </ul>
+            <div class="service-box-shape">
+              <img src="assets/image/flower.png" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- form 3 -->
+        <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+          <div class="appointment-content">
+            <div class="content-title style1 Cinzel-f">
+              <h2 class="text-center">Your dream venue deserves to be discovered. Let’s make it happen.</h2>
+            </div>
+            <form class="appointment-form" id="ajax-header-contact-3">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input type="text" name="name1" placeholder="Your Name">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input type="text" name="City" placeholder="Your City">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input type="text" name="phone" placeholder="Phone Number">
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <button type="submit" class="btn2 style1 rounded">Book Now</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Appointment Section End -->
+  <!-- footer -->
+  <!-- footer -->
+
+  <footer class="pt-12 pb-0">
+    <div class="container">
+      <div class="row">
+        <!-- col -->
+        <div class="col-lg-6 col-md-6 col-12 ">
+          <!-- para -->
+          <div class="mb-4 mb-lg-0 content">
+            <a class="navbar-brand fs-2 Cinzel-f" href=" #">
+
+              <img src="assets/image/logo-white-1.png" alt="">
+
+            </a>
+            <p class="mb-0 mt-4 pe-lg-16">Discover the most high rated wedding vendors and plan your wedding more
+              better, forever.</p>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 col-md-6 col-12">
+          <!-- contact -->
+          <div class="mb-4 mb-lg-0 content__item">
+            <h3 class="mb-3 text-light link link--thebe">Contact us</h3>
+            <p class="mb-1">Email:<a href="#" class="ms-1 color-white link link--metis">alok@aajneeti.social</a></p>
+            <p>Phone:<span class="white text-dark fw-semi-bold ms-2 link link--metis">+91 7827575143</span></p>
+          </div>
+        </div>
+      </div>
+      <!-- tiny footer -->
+      <div class="row mt-8 border-top py-2 align-items-center">
+        <div class="col-md-10 col-12">
+          <div class="d-flex fs-5 align-items-center justify-content-around text-center flex-wrap">
+
+            <div>
+              &copy;
+              <span id="copyright">
+                <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+              </span> &nbsp;
+              Celebration Spaces – Powered by <a href="https://aajneeti.social/"> AAJneeti Connect Ltd. (ACL)</a>
+            </div>
+            <div class="ms-3">
+              <!-- list -->
+              <ul class="list-inline">
+                <li class="list-inline-item"><a href="privacy.html" class="color-white">PrivacyTerms</a></li>
+                <li class="list-inline-item"><a href="disclaimer.html" class="color-white">Disclaimer</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-2 col-12">
+          <div class="text-md-end lh-1">
+            <!-- list -->
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="#" class="text-body text-hover-primary"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-facebook"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                  </svg></a></li>
+              <li class="list-inline-item"><a href="#" class="text-body text-hover-primary"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-twitter"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                  </svg></a></li>
+              <li class="list-inline-item"><a href="#" class="text-body text-hover-primary"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-instagram"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                  </svg></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade p-0" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-3">
+
+        <div class="modal-header border-0">
+          <h3 class="modal-title Cinzel-f ms-auto fs-1" id="bookingModalLabel" style="text-align: center;">
+            Get In Touch
+          </h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body" style="background-color: white;">
+          <form class="appointment-form" id="ajax-header-contact-4">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input type="text" name="name1" placeholder="Your Name" class="rounded">
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input type="text" name="City" placeholder="Your City" class="rounded">
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input type="tel" name="phone" placeholder="Phone Number" class="rounded">
+                </div>
+              </div>
+              <div class="col-md-12">
+                <button type="submit" class="btn2 style1 rounded">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/7827575143" class="whatsapp-button" target="_blank" title="Chat with us">
+    <span class="whatsapp-icon"><i class="fa-brands fa-whatsapp"></i></span>
+  </a>
+  <!-- WhatsApp Button -->
+  <a href="tel:7827575143" class="call-button" target="_blank" title="Chat with us">
+    <span class="call-icon"><i class="fa-solid fa-phone-volume"></i></span>
+  </a>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-- <script src="./assets/libs/jquery/dist/jquery.min.js"></script> -->
+  <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/libs/flatpickr/dist/flatpickr.min.js"></script>
+  <!-- JS (optional, only needed for licensing if required) -->
+  <script src="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/license.min.js"></script>
+
+
+
+
+  <!-- wow .js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.8/odometer.min.js"></script>
+
+
+  <!-- scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Jarallax JS -->
+  <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax-element.min.js"></script>
+  <script src="assets/js/gSap.js"></script>
+
+  <!-- Theme JS -->
+  <script src="assets/js/theme.min.js"></script>
+  <script src="assets/js/form.js"></script>
+
+  <script>
+
+
+    jarallax(document.querySelectorAll('.jarallax'), {
+      speed: 0.2,
+    });
+
+  </script>
+  <script>
+    // Wait for DOM to load
+    document.addEventListener("DOMContentLoaded", function () {
+      // Show modal after 5 seconds
+      setTimeout(function () {
+        var bookingModal = new bootstrap.Modal(document.getElementById('bookingModal'));
+        bookingModal.show();
+      }, 5000); // 5000 milliseconds = 5 seconds
+    });
+  </script>
+
+</body>
+
+</html>
