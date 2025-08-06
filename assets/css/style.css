@@ -51072,3 +51072,10 @@ p.blog-desc {
 .flink{
   color: white;
 }
+
+.pricing-wrap ul li{
+font-size: larger;
+}
+.row .col-xl-4:nth-of-type(2) .pricing-card {
+  background: linear-gradient(252deg, #f9f9f9, #e0eaff);
+}
