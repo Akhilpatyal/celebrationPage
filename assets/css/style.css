@@ -49653,6 +49653,7 @@ p.blog-desc {
 
 .service-card {
   margin-bottom: 25px;
+  border-radius: 35px!important;
 }
 
 .service-card h3 {
