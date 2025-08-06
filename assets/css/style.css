@@ -49663,6 +49663,9 @@ p.blog-desc {
 .service-card h3:hover a {
   color: #fb8500;
 }
+.service-card a:hover {
+  color: #fb8500!important;
+}
 
 .service-card p {
   margin: 0 0 15px;
@@ -51078,4 +51081,22 @@ font-size: larger;
 }
 .row .col-xl-4:nth-of-type(2) .pricing-card {
   background: linear-gradient(252deg, #f9f9f9, #e0eaff);
+}
+.pb-100{
+  padding-bottom: 100px;
+}
+.fs-32{
+  font-size: 32px;
+}
+@media (max-width:768px) {
+  .ptb-100{
+    padding-top:50px ;
+    padding-bottom:50px ;
+  }
+  .pb-100{
+  padding-bottom: 50px;
+}
+.fs-32{
+  font-size: 26px;
+}
 }
