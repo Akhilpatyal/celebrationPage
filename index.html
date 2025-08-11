@@ -16,6 +16,9 @@
   <!-- swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+    integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Theme CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
@@ -37,7 +40,6 @@
     <span class="cursor-outline"></span>
     <span class="cursor-dot"></span>
   </div>
-
   <!-- navbar -->
   <div class="navbar-transparent navbar-position">
     <div class="container-fluid">
@@ -116,7 +118,7 @@
   </div>
 
   <!-- hero section -->
-  <section class=" py-5 HeroSection position-relative overflow-hidden d-flex align-items-center justify-content-center"
+  <section class=" HeroSection position-relative overflow-hidden d-flex align-items-center justify-content-center"
     id="home">
     <!-- Slider Wrapper -->
     <div class="hero-slider  ">
@@ -125,34 +127,44 @@
       <div class="slide slide-3"></div>
     </div>
 
-    <div class="container position-relative" style="z-index: 2;">
+    <div class="container position-relative" style="z-index: 2; padding-top: 50px;">
       <div class="row justify-content-center">
         <!-- hero captions -->
         <div class="col-lg-8 col-md-6">
           <div class="text-white">
-            <h1 class="text-white Cinzel-f fs-32 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s" id="heading">Why List Your Venue on <span style="color:#f48c06">Celebration
+            <h1 class="text-white Cinzel-f fs-32 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">Why
+              List Your Venue on <span style="color:#f48c06">Celebration
                 Spaces</span>?</h1>
-            <p class="lead parata-f wow animate__animated animate__fadeInUp" data-wow-delay="0.3s" id="heading">More Bookings. More Visibility. Less Hassle.</p>
-            <P class="wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">Presented by:</P>
-            <p class="lead parata-f wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">Celebration Spaces – Powered by AAJneeti Connect Ltd. (ACL)</p>
-            <p class="lead parata-f wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">India’s Modern Wedding & Event Planning Hub</p>
-            <p class="lead parata-f wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">We’re not just a listing site — we’re your booking partner.</p>
+            <p class="lead parata-f wow animate__animated animate__fadeInUp" data-wow-delay="0.3s" id="heading">More
+              Bookings. More Visibility. Less Hassle.</p>
+            <P class="wow animate__animated animate__fadeInUp" data-wow-delay="0.4s" style="color:#f48c06">Presented
+              by:</P>
+            <p class="lead parata-f wow animate__animated animate__fadeInUp " data-wow-delay="0.4s"> <span
+                class="gradient"> Celebration Spaces</span> – Powered by AAJneeti Connect Ltd. (ACL)</p>
+            <p class="lead parata-f wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">India’s Modern
+              Wedding & Event Planning Hub</p>
+            <p class="lead parata-f wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">We’re not just a
+              listing site — we’re your booking partner.</p>
             <ul class="list-unstyled">
-              <li class="maths-f fs-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.7s"><i class="fa-solid fa-hand-point-right"></i> Attract verified, ready-to-book
+              <li class="maths-f fs-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.7s"><i
+                  class="fa-solid fa-hand-point-right"></i> Attract verified, ready-to-book
                 users</li>
-              <li class="maths-f fs-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.8s"><i class="fa-solid fa-hand-point-right"></i> Get included in our digital ads on
+              <li class="maths-f fs-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.8s"><i
+                  class="fa-solid fa-hand-point-right"></i> Get included in our digital ads on
                 Google, Facebook & Instagram</li>
-              <li class="maths-f fs-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.9s"><i class="fa-solid fa-hand-point-right"></i> Feature in our city pages and
+              <li class="maths-f fs-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.9s"><i
+                  class="fa-solid fa-hand-point-right"></i> Feature in our city pages and
                 Google-optimised campaigns</li>
             </ul>
-            <a data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn btn2 style1 rounded wow animate__animated animate__zoomIn" data-wow-delay="0.2s">Download
+            <a data-bs-toggle="modal" data-bs-target="#bookingModal"
+              class="btn btn2 style1 rounded wow animate__animated animate__zoomIn" data-wow-delay="0.2s">Download
               Brochure</a>
           </div>
 
         </div> <!-- end col -->
         <!-- form 1-->
         <div class="col-lg-4 col-md-6 d-flex justify-content-center align-items-start flex-column d-none d-sm-block">
-          <div class="appointment-content p-4 rounded-4" style="background:white">
+          <div class="appointment-content p-4 rounded-4" style="background:#ffffffe0">
             <div class="content-title style1 Cinzel-f">
               <h2 id="heading" class="text-center">Get in Touch</h2>
             </div>
@@ -221,9 +233,12 @@
     <div class="container">
       <div class="row align-items-center gx-5">
         <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
-          <h2 class="TextColor parata-f wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">The Big Problem:
+          <h2 class="TextColor parata-f wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">The Big
+            Problem:
             Are You Facing These Challenges?</h2>
-          <h4 class="outfit-f wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">If you're a banquet hall or
+          <h4 class="outfit-f wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">If you're a banquet
+            hall
+            or
             wedding venue owner, chances are you’ve dealt with:</h4>
 
           <ul class="maths-f list-unstyled">
@@ -238,9 +253,11 @@
             <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.8s"><i
                 class="fa-solid fa-feather-pointed"></i> High marketing spends with minimal ROI</li>
           </ul>
-          <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.9s">You deserve a smarter, simpler, and
+          <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.9s">You deserve a smarter, simpler,
+            and
             results-driven approach.</p>
-          <h2 class="TextColor parata-f wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">What’s In It For
+          <h2 class="TextColor parata-f wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">What’s In It
+            For
             You?</h2>
           <h4 class="outfit-f wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">Why 100+ venue owners
             choose Celebration Spaces:</h4>
@@ -254,34 +271,62 @@
             <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.6s"><i
                 class="fa-solid fa-feather-pointed"></i> Direct inquiries via chat, call, or contact form</li>
             <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.7s"><i
-                class="fa-solid fa-feather-pointed"></i> Feature in our city pages and Google-optimised campaigns</li>
+                class="fa-solid fa-feather-pointed"></i> Feature in our city pages and Google-optimised campaigns
+            </li>
             <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.8s"><i
-                class="fa-solid fa-feather-pointed"></i> Get included in our digital ads on Google, Facebook & Instagram
+                class="fa-solid fa-feather-pointed"></i> Get included in our digital ads on Google, Facebook &
+              Instagram
             </li>
           </ul>
-        </div>
-        <div class="col-lg-6 shine-effect wow animate__animated animate__fadeInRight" data-wow-delay="0.4s">
-          <img src="assets/image/newhall2.png" alt="" class="img-fluid rounded">
-        </div>
 
+        </div>
+        <div class="col-lg-6 ">
+          <div class="position-relative">
+            <div class="row g-4 z-1000">
+              <div class="col-6 ">
+                <div class="spacer-single"></div>
+                <img src="assets/image/newAbout-1.jpeg"
+                  class="img-fluid hoverBright rounded-3 mb-4 w-70 wow animate__animated animate__zoomIn"
+                  data-wow-delay=".0s" alt="">
+                <img src="assets/image/newAbout-2.png"
+                  class="img-fluid hoverBright rounded-3 wow animate__animated animate__zoomIn" data-wow-delay=".2s"
+                  alt="">
+              </div>
+              <div class="col-6 ">
+                <img src="assets/image/newAbout-3.jpeg"
+                  class="img-fluid hoverBright rounded-3 mb-4 wow animate__animated animate__zoomIn"
+                  data-wow-delay=".5s" alt="">
+                <img src="assets/image/newAbout-5.jpeg"
+                  class="img-fluid hoverBright rounded-3  wow animate__animated animate__zoomIn" data-wow-delay=".3s"
+                  alt="">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
     </div>
+
   </section>
 
   <section class="appointment-wrap style1 pb-100">
     <div class="container">
       <div class="row align-items-center gx-5">
-        <div class="col-lg-6 shine-effect" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
-          <img src="assets/image/hall4.png" alt="" class="img-fluid rounded wow animate__animated animate__fadeInLeft"
-            data-wow-delay="0.4s">
+        <div class="col-lg-6 shine-effect wow animate__animated animate__fadeInLeft shine-animate-item"
+          data-wow-delay="0.4s">
+          <div class="shine-animate">
+            <img src="assets/image/hall4.png" alt="" class="img-fluid rounded">
+          </div>
         </div>
         <div class="col-lg-6 d-flex justify-content-center align-content-center" data-aos="fade-right"
           data-aos-duration="1200" data-aos-delay="200">
           <div class="secondCard">
             <div class="item-1 py-2">
-              <h1 class="TextColor parata-f wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">We Go Beyond
+              <h1 class="TextColor parata-f wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">We Go
+                Beyond
                 Listings</h1>
-              <h4 class="outfit-f wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">Celebration Spaces is
+              <h4 class="outfit-f wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">Celebration Spaces
+                is
                 an entire ecosystem designed to get you booked:</h4>
               <ul class="maths-f list-unstyled">
                 <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.4s"><i
@@ -291,14 +336,17 @@
                 <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.6s"><i
                     class="fa-solid fa-feather-pointed"></i> Planning Guides, Budget Calculators & Blogs</li>
                 <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.7s"><i
-                    class="fa-solid fa-feather-pointed"></i> Genie Recommendation Engine for perfect match-making</li>
+                    class="fa-solid fa-feather-pointed"></i> Genie Recommendation Engine for perfect match-making
+                </li>
                 <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.8s"><i
-                    class="fa-solid fa-feather-pointed"></i> Celebration Privilege loyalty program for bonus visibility
+                    class="fa-solid fa-feather-pointed"></i> Celebration Privilege loyalty program for bonus
+                  visibility
                 </li>
               </ul>
             </div>
             <div class="item-2 py-2">
-              <h1 class="TextColor parata-f wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">Powered by
+              <h1 class="TextColor parata-f wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">Powered
+                by
                 Performance</h1>
               <h4 class="outfit-f wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">We bring tech +
                 marketing muscle to your venue:</h4>
@@ -310,9 +358,11 @@
                 <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.6s"><i
                     class="fa-solid fa-feather-pointed"></i> Planning Guides, Budget Calculators & Blogs</li>
                 <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.7s"><i
-                    class="fa-solid fa-feather-pointed"></i> Genie Recommendation Engine for perfect match-making</li>
+                    class="fa-solid fa-feather-pointed"></i> Genie Recommendation Engine for perfect match-making
+                </li>
                 <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.8s"><i
-                    class="fa-solid fa-feather-pointed"></i> Celebration Privilege loyalty program for bonus visibility
+                    class="fa-solid fa-feather-pointed"></i> Celebration Privilege loyalty program for bonus
+                  visibility
                 </li>
               </ul>
             </div>
@@ -372,102 +422,85 @@
           </div>
         </div>
       </div>
-      <p class="text-center pt-2">Available in top cities: Agra, Noida, Delhi NCR, Jaipur, Lucknow, Goa, and more!</p>
+      <p class="text-center pt-2">Available in top cities: Agra, Noida, Delhi NCR, Jaipur, Lucknow, Goa, and more!
+      </p>
     </div>
   </section>
 
-  <!-- gallery -->
-  <section class="ptb-100" id="gallery">
-    <div class="container">
-      <div class="row mb-6">
-        <!-- caption -->
-        <div class="col-md-12 col-12 text-center">
-          <h2 class="mb-0 Cinzel-f wow animate__animated animate__fadeInUp" data-wow-delay="0.4s"
-            style="font-size: 40px;">Gallery
-          </h2>
+
+  <!-- Gallery Area  
+==============================-->
+  <div class="bg-title-dark ptb-100">
+    <div class="bg-gray rounded-80 space">
+
+      <div class="container th-container">
+        <div class="gallery-wrap1 ">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 order-md-2">
+              <div class="title-area mb-md-0 text-center radialEffect">
+                <h2 class="sec-title" style="font-family: 'Prata';font-size: 44px;">A Glimpse into Love & Celebration</h2>
+
+              </div>
+            </div>
+            <div class="col-12 order-md-1">
+              <ul class="gallery-list-1">
+                <li class="gallery-card image-container border-0">
+                  <a href="assets/image/gallery-1.png" data-fancybox="wedding" data-caption="Bride & Groom">
+                    <img src="assets/image/gallery-1.png" alt="img" class="img-fluid">
+                    <i class="fal fa-plus"></i>
+                  </a>
+                </li>
+                <li class="gallery-card image-container border-0">
+                  <a href="assets/image/gallery-2.png" data-fancybox="wedding" data-caption="Bride & Groom">
+                    <img src="assets/image/gallery-2.png" alt="img" class="img-fluid">
+                    <i class="fal fa-plus"></i>
+                  </a>
+                </li>
+                <li class="gallery-card image-container border-0">
+                  <a href="assets/image/about-2.jpg" data-fancybox="wedding" data-caption="Bride & Groom">
+                    <img src="assets/image/about-2.jpg" alt="img" class="img-fluid">
+                    <i class="fal fa-plus"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 order-md-3">
+              <ul class="gallery-list-2">
+                <li class="gallery-card image-container border-0">
+                  <a href="assets/image/about-3.jpg" data-fancybox="wedding" data-caption="Bride & Groom">
+                    <img src="assets/image/about-3.jpg" alt="img" class="img-fluid">
+                    <i class="fal fa-plus"></i>
+                  </a>
+                </li>
+                <li class="gallery-card image-container border-0">
+                  <a href="assets/image/banner14.png" data-fancybox="wedding" data-caption="Bride & Groom">
+                    <img src="assets/image/banner14.png" alt="img" class="img-fluid">
+                    <i class="fal fa-plus"></i>
+                  </a>
+                </li>
+                <li class="gallery-card image-container border-0">
+                  <a href="assets/image/gallery-1.png" data-fancybox="wedding" data-caption="Bride & Groom">
+                    <img src="assets/image/gallery-1.png" alt="img" class="img-fluid">
+                    <i class="fal fa-plus"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-
       </div>
-      <div class="swiper vlogMySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="position-relative wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
-              <div class=" img-hover  mb-4 image-container">
-                <!-- img -->
-                <a href="detail_page.html"><img src="assets/image/banner6.png" alt="" class="img-fluid "></a>
-                <div class="overlay"></div>
-              </div>
-
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="position-relative wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
-              <div class=" img-hover  mb-4 image-container">
-                <!-- img -->
-                <a href="detail_page.html"><img src="assets/image/banner8.png" alt="" class="img-fluid"></a>
-                <div class="overlay"></div>
-              </div>
-
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="position-relative wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
-              <div class=" img-hover  mb-4 image-container">
-                <!-- img -->
-                <a href="detail_page.html"><img src="assets/image/banner15.png" alt="" class="img-fluid"></a>
-                <div class="overlay"></div>
-              </div>
-
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="position-relative wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
-              <div class=" img-hover  mb-4 image-container">
-                <!-- img -->
-                <a href="detail_page.html"><img src="assets/image/hall4.png" alt="" class="img-fluid"></a>
-                <div class="overlay"></div>
-              </div>
-
-
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="position-relative wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
-              <div class=" img-hover  mb-4 image-container">
-                <!-- img -->
-                <a href="detail_page.html"><img src="assets/image/Editors6.png" alt="" class="img-fluid"></a>
-                <div class="overlay"></div>
-              </div>
-
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="position-relative wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
-              <div class=" img-hover  mb-4 image-container">
-                <!-- img -->
-                <a href="pages/blog-single.html"><img src="assets/image/hall4.png" alt="" class="img-fluid"></a>
-                <div class="overlay"></div>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-
     </div>
-  </section>
+  </div>
 
-  <!-- gallery end -->
   <!-- Pricing Section Start -->
-  <section class="pricing-wrap pb-100" id="price">
+  <section class="pricing-wrap pb-100 " id="price">
     <div class="container">
       <div class="section-title style1 text-center mb-30">
-        <span class="parata-f wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">Packages for Every Business
+        <span class="parata-f wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">Packages for Every
+          Business
           Need</span>
-        <h4 class="pt-2 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">Celebration Spaces has tailored
+        <h4 class="pt-2 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">Celebration Spaces has
+          tailored
           packages to fit every stage of your business growth</h4>
       </div>
       <div class="row justify-content-center pb-75  text-center">
@@ -499,7 +532,8 @@
               <p>480–600 targeted inquiries</p>
               <li class="checked fw-semibold">Best Suited For:<i class="ri-check-line"></i></li>
               <p>Large venues, premium properties</p>
-              <p>This premium package ensures priority placement, maximum visibility, and high-frequency inquiries to
+              <p>This premium package ensures priority placement, maximum visibility, and high-frequency inquiries
+                to
                 support large-scale operations.</p>
             </ul>
             <a data-bs-toggle="modal" data-bs-target="#bookingModal" class="btn2 style1 rounded">Book Now</a>
@@ -528,7 +562,6 @@
   </section>
   <!-- Pricing Section End -->
 
-
   <!-- cta -->
   <section class="ptb-100 cta jarallax overlay-section position-relative" id="service">
     <img class="jarallax-img " src="assets/image/ring.jpg" alt="">
@@ -546,13 +579,16 @@
               with our smart tools:</p>
             <ul class="list-unstyled">
               <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.4s"><i
-                  class="fa-solid fa-hand-point-right"></i> Lead Nurturing: Automated follow-ups and drip campaigns to
+                  class="fa-solid fa-hand-point-right"></i> Lead Nurturing: Automated follow-ups and drip campaigns
+                to
                 warm up cold leads.</li>
               <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.5s"><i
-                  class="fa-solid fa-hand-point-right"></i> WhatsApp Retargeting: Stay top-of-mind with leads who didn’t
+                  class="fa-solid fa-hand-point-right"></i> WhatsApp Retargeting: Stay top-of-mind with leads who
+                didn’t
                 book immediately.</li>
               <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.6s"><i
-                  class="fa-solid fa-hand-point-right"></i> CRM Access: Track, manage, and organize your inquiries from
+                  class="fa-solid fa-hand-point-right"></i> CRM Access: Track, manage, and organize your inquiries
+                from
                 one simple dashboard.</li>
               <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.7s"><i
                   class="fa-solid fa-hand-point-right"></i> Sales Assistance: Get help from our in-house experts to
@@ -564,7 +600,8 @@
           <div class="text-white text-start">
             <h2 class=" fw-semi-bold text-white mb-4 Cinzel-f fs-1 wow animate__animated animate__fadeInUp"
               data-wow-delay="0.2s">Real Support. Real Growth.</h2>
-            <p class="text-white mb-6 parata-f fs-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">We’re
+            <p class="text-white mb-6 parata-f fs-3 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+              We’re
               in it for the long haul.</p>
             <ul class="list-unstyled">
               <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.4s"><i
@@ -585,20 +622,20 @@
 
   </section>
 
-
-
-
   <!-- Appointment Section start -->
   <section class="appointment-wrap style1 ptb-100" id="contact">
     <div class="container">
       <div class="row align-items-center gx-5">
         <div class="col-lg-6 " data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
           <div class="aboutCard position-relative">
-            <h1 class="parata-f TextColor wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">Ready to List
+            <h1 class="parata-f TextColor wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">Ready to
+              List
               Your Venue?</h1>
-            <h3 class="parata-f wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">Let’s Fill Your Calendar
+            <h3 class="parata-f wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">Let’s Fill Your
+              Calendar
               with Celebrations</h3>
-            <p class="outfit-f wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">Join Celebration Spaces
+            <p class="outfit-f wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">Join Celebration
+              Spaces
               today and unlock:</p>
             <ul class="list-unstyled">
               <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.5s"><i
@@ -608,7 +645,8 @@
               <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.7s"><i
                   class="fa-solid fa-feather-pointed"></i> Loyalty-based perks through our vendor ecosystem</li>
               <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.8s"><i
-                  class="fa-solid fa-feather-pointed"></i> A smarter way to grow with the power of AAJneeti Connect Ltd.
+                  class="fa-solid fa-feather-pointed"></i> A smarter way to grow with the power of AAJneeti Connect
+                Ltd.
               </li>
             </ul>
             <div class="service-box-shape">
@@ -651,9 +689,8 @@
     </div>
   </section>
   <!-- Appointment Section End -->
-  <!-- footer -->
-  <!-- footer -->
 
+  <!-- footer -->
   <footer class="pt-12 pb-0">
     <div class="container">
       <div class="row">
@@ -693,7 +730,9 @@
               <span id="copyright">
                 <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
               </span> &nbsp;
-              <a href="https://celebrationspaces.com/" target="_blank" class="flink">Celebration Spaces</a> – Powered by
+              <a href="https://celebrationspaces.com/" target="_blank" class="flink">Celebration Spaces</a> –
+              Powered
+              by
               <a href="https://aajneeti.social/" class="flink"> AAJneeti Connect Ltd. (ACL)</a>
             </div>
             <div class="ms-3">
@@ -789,17 +828,15 @@
   </a>
 
 
+
+  <!-- <script src="./assets/libs/jquery/dist/jquery.min.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-  <!-- <script src="./assets/libs/jquery/dist/jquery.min.js"></script> -->
   <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./assets/libs/flatpickr/dist/flatpickr.min.js"></script>
   <!-- JS (optional, only needed for licensing if required) -->
   <script src="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/license.min.js"></script>
-
-
-
 
   <!-- wow .js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
@@ -808,6 +845,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -815,18 +853,18 @@
   <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax-element.min.js"></script>
   <script src="assets/js/gSap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+    integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- Theme JS -->
   <script src="assets/js/theme.min.js"></script>
   <script src="assets/js/form.js"></script>
 
   <script>
-
-
     jarallax(document.querySelectorAll('.jarallax'), {
       speed: 0.2,
     });
-
   </script>
   <script>
     // Wait for DOM to load
