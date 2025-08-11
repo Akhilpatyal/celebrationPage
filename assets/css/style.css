@@ -51420,3 +51420,6 @@ scale: 1.01;
   z-index: -1;
   background: radial-gradient(circle, rgb(244 164 65 / 25%) 0%, rgba(255, 255, 255, 0) 80%);
 }
+.list-unstyled li{
+  font-size: 20px;
+}
